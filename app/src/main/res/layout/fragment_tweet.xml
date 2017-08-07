@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivProfilePhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/ic_launcherphoto"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivProfilePhoto"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/ivProfilePhoto"
+        android:text="@string/name" />
+
+    <EditText
+        android:id="@+id/etTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/ivProfilePhoto"
+        android:layout_below="@+id/tvName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/tweetcompose"
+        tools:ignore="LabelFor,etTweet" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etTweet"
+        android:onClick="SendTweet"
+        android:layout_below="@+id/etTweet"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/button"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SimpleTweets</string>
+    <string name="login_label">Connect to Twitter</string>
+    <string name="action_setting">Settings</string>
+    <string name="intent_scheme">oauth</string>
+    <string name="title_activity_timeline">Home Timeline</string>
+    <string name="intent_host">codepathtweets</string>
+    <string name="bigi">Bigi</string>
+    <string name="textview">TextView</string>
+    <string name="logo">Logo</string>
+    <string name="your_name">My name</string>
+    <string name="send">Send</string>
+    <string name="name">Name</string>
+    <string name="tweetcompose">TweetCompose</string>
+    <string name="button">Send</string>
+    <string name="fragment_tweet">fragment_tweet.xml</string>
+
+</resources>
